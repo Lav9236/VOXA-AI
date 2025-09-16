@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Conversation</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='vpro.css') }}" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <div class="hero">
+    <h3>Step into the World of Smart <span>Conversations</span></h3>
+
+    <div id="chat_area" class="chat_area">
+      <!-- Messages will appear here -->
+    </div>
+
+    <textarea id="textInput" placeholder="Say something or type here..."></textarea>
+
+    <div class="row">
+      <select id="voiceSelect">
+        <option value="0">Select Voice</option>
+        <!-- JavaScript will fill this -->
+      </select>
+
+      <button id="Listen">
+        <i class="fas fa-microphone"></i> Listen
+      </button>
+
+      <button id="playPauseBtn">
+        <i id="playPauseIcon" class="fas fa-play"></i> Play
+      </button>
+
+      <button id="sendBtn">
+        <i class="fas fa-paper-plane"></i> Send
+      </button>
+    </div>
+  </div>
+
+  <script defer src="{{ url_for('static', filename='vpro.js') }}"></script>
+</body>
+</html>

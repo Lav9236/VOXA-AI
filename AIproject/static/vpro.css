@@ -1,0 +1,152 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(45deg, #622a7d, #35096b);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 40px 20px;
+}
+
+.hero h3 {
+  font-size: 45px;
+  font-weight: 500;
+  margin-bottom: 30px;
+  color: white;
+  text-align: center;
+}
+
+.hero h3 span {
+  color: #ff2943;
+}
+
+textarea {
+  width: 100%;
+  max-width: 700px;
+  height: 70px;
+  background: #282563;
+  color: #fff;
+  font-size: 16px;
+  border: 0;
+  outline: 0;
+  padding: 20px;
+  border-radius: 10px;
+  resize: none;
+  margin-bottom: 20px;
+}
+
+textarea::placeholder {
+  color: #ccc;
+}
+
+.row {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+select {
+  flex: 1 1 120px;
+  max-width: 150px;
+  background: #403d84;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 12px 15px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+select:focus {
+  outline: none;
+}
+
+button {
+  background: #ff2953;
+  color: white;
+  font-size: 16px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #e02147;
+}
+
+button i {
+  font-size: 18px;
+}
+
+/* Chat area */
+#chat_area {
+  width: 100%;
+  max-width: 700px;
+  height: 300px;
+  background: #1d1c44;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 10px;
+  overflow-y: auto;
+  margin-bottom: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  word-wrap: break-word;
+}
+
+.user_msg {
+  background: #658291;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  max-width: 80%;
+  align-self: flex-end;
+  margin-left: 20%;
+  
+}
+
+.ai_msg {
+  background: #333366;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  max-width: 80%;
+  align-self: flex-start;
+}
+
+@media (max-width: 500px) {
+  .row {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  select {
+    max-width: 100%;
+    flex: 1 1 100%;
+  }
+
+  button {
+    flex: 1 1 calc(50% - 8px);
+  }
+}

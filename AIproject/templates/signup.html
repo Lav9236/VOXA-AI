@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Chatbot - Sign Up</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+  <form action="/signup" method="POST">
+    <h2>Join AI VOXA</h2>
+
+    <input type="text" name="fullname" placeholder="Full Name" required >
+    <input type="email" name="email" placeholder="Email Address" required>
+    <input type="password" name="password" placeholder="Create Password" required>
+    <input type="password" placeholder="Confirm Password" required>
+    API KEY
+    <input type="text">
+    <div class="terms">
+      <input type="checkbox" required>
+      agree to the Terms & Conditions
+    </div>
+
+    <button type="submit">Sign Up</button>
+
+    <div class="signin-link">
+      Already have an account? <a href="login">Sign In</a>
+    </div>
+  </form>
+</body>
+</html>
